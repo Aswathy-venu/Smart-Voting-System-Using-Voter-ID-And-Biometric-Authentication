@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JUSTICE - Free Lawyer Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{
+        
+        
+        
+        static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"> 
+    <link href="{% static 'css/contact.css' %}" rel="stylesheet">
+</head>
+
+<body>
+     <!-- Header Start -->
+     <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-secondary d-none d-lg-block">
+                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                    <h1 class="m-0 display-4 text-primary text-uppercase">Plebiscite</h1>
+                </a>
+            </div>
+            <div class="col-lg-9">
+                <div class="row bg-white border-bottom d-none d-lg-flex">
+                    <div class="col-lg-7 text-left">
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-3">
+                            <i class="fa fa-envelope text-primary mr-2"></i>
+                            <small>Plebiscite@example.com</small>
+                        </div>
+                        <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                            <i class="fa fa-phone-alt text-primary mr-2"></i>
+                            <small>+91 9778256337</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 text-right">
+                        <div class="d-inline-flex align-items-center p-2">
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light p-0">
+                    <a href="index.html" class="navbar-brand d-block d-lg-none">
+                        <h1 class="m-0 display-4 text-primary text-uppercase">Plebiscite</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav mr-auto py-0">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="About" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Register</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="userapp/uregister" class="dropdown-item">User</a>
+                                    <a href="panchayatapp/pregister" class="dropdown-item">Panchayat</a>
+                                </div>
+                                
+                            </div>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Login</a>
+                                <div class="dropdown-menu rounded-0 m-0">
+                                    <a href="userapp/ulogin" class="dropdown-item">User</a>
+                                    <a href="adminapp/alogin" class="dropdown-item">Admin</a>
+                                    <a href="panchayatapp/plogin" class="dropdown-item">Panchayat</a>
+                                </div>
+                                
+                            </div>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <section id="contact">
+  
+        <h1 class="section-header">Contact</h1>
+        
+        <div class="contact-wrapper">
+        
+        <!-- Left contact page --> 
+          
+          <form id="contact-form" class="form-horizontal" role="form">
+             
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+              </div>
+            </div>
+      
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+            
+            <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+              <div class="alt-send-button">
+                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+              </div>
+            
+            </button>
+            
+          </form>
+          
+        <!-- Left contact page --> 
+          
+            <div class="direct-contact-container">
+      
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Trivandrum, Kerala</span></i></li>
+                
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">+91 9778256337</a></span></i></li>
+                
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">Plebiscite@gmail.com</a></span></i></li>
+                
+              </ul>
+      
+             
+      
+              <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+      
+            </div>
+          
+        </div>
+        
+      </section>  
+
+
+  
+
+
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid bg-secondary text-white pt-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Our Office</h5>
+                    <p class="m-0">123 Street, Thrissur, Kerala</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Email Us</h5>
+                    <p class="m-0">Plebiscite@example.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="d-flex justify-content-lg-center p-4" style="background: rgba(256, 256, 256, .05);">
+                <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                <div class="ml-3">
+                    <h5 class="text-white">Call Us</h5>
+                    <p class="m-0">+91 9778256337</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <a href="{ % static 'index.html" class="navbar-brand' %}">
+                <h1 class="m-0 mt-n2 display-4 text-primary text-uppercase">Plebiscite</h1>
+            </a>
+            <p>Elections belong to the people. It's their decision. 
+                If they decide to turn their back on the fire and burn their behinds, 
+                then they will just have to sit on their blisters.</p>
+            <div class="d-flex justify-content-start mt-4">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-semi-bold text-primary mb-4">Popular Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-semi-bold text-primary mb-4">Quick Links</h4>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms</a>
+                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy</a>
+                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Site Map</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="font-weight-semi-bold text-primary mb-4">Newsletter</h4>
+            <p>Elections belong to the people. It's their decision.
+                 If they decide to turn their back on the fire and burn their behinds,
+                  then they will just have to sit on their blisters.</p>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-0" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary px-4">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row p-4 mt-5 mx-0" style="background: rgba(256, 256, 256, .05);">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">&copy; <a class="font-weight-bold" href="#">Plebiscite</a>. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+            <p class="m-0 text-white">Designed by <a class="font-weight-bold" href="https://htmlcodex.com">Aswathy Venu</a></p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+    
+    
+    
+
+
+
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'lib/easing/easing.min.js' %}"></script>
+<script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+<script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+<script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+<!-- Contact Javascript File -->
+<script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+<script src="{% static 'mail/contact.js' %}"></script>
+
+<!-- Template Javascript -->
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/contact.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>JUSTICE - Free Lawyer Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{
+        
+        
+        
+        static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plogin.css' %}" rel="stylesheet">
+
+
+    <style>
+        *
+  {
+      background: #f1f2f6;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .image-area
+  {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+  }
+  
+  .img-wrapper
+  {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  .img-wrapper:before
+  {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 180%;
+      height: 100%;
+      width: 100%;
+      background: rgba(255,255,255,.3);
+      z-index: 1;
+      transform: skew(45deg);
+      transition: .5s;
+  }
+  
+  .img-wrapper:hover:before
+  {
+      left: -180%;
+  }
+  
+  .img-wrapper img
+  {
+      height: 300px;
+      width: 300px;
+      {% comment %} filter: grayscale(100%); {% endcomment %}
+      transition: 2s;
+  }
+  .img-wrapper:hover img
+  {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+  }
+  
+  .img-wrapper h2
+  {
+      background: tomato;
+      font-family: Poppins;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 10px 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      transform: perspective(400px) rotateY(90deg);
+      transform-origin: right;
+      transition: 1s;
+  }
+  
+  .img-wrapper:hover h2
+  {
+      transform: perspective(400px) rotateY(0deg);
+  }
+  
+  .img-wrapper ul
+  {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li
+  {
+      background: #333;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 40px;
+      transform: perspective(800px) rotateY(90deg);
+      transition: .5s;
+      transform-origin: left;
+  }
+  
+  .img-wrapper:hover ul li
+  {
+      transform: perspective(800px) rotateY(0deg);
+  }
+  
+  .img-wrapper:hover ul li:nth-child(1)
+  {
+      transition-delay: .2s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(2)
+  {
+      transition-delay: .6s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(3)
+  {
+      transition-delay: .8s;
+  }
+  
+  .img-wrapper:hover ul li:nth-child(4)
+  {
+      transition-delay: 1s;
+  }
+  
+  .img-wrapper ul li a
+  {
+      color: tomato;
+      background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li i
+  {
+      color: tomato;
+      background: rgba(255,255,255,0);
+  }
+  
+  .img-wrapper ul li i:hover
+  {
+      color: #fff;
+      background: rgba(255,255,255,0);
+  }
+             
+      </style>
+
+
+</head>
+
+<body>
+   
+    <br>
+<a href="phome"><h5>Back</h5></a>
+
+<center><h2>Candidates</h2></center>
+    <div class="container mt-2">
+     <div class="row">
+ 
+     {% comment %} {% for p in vc %} {% endcomment %}
+   {% if win.result %}
+    <div class="">
+         <div class="img-wrapper">
+       <a href="">
+        <h6>{{win.Name}} </h6>
+             <img src="{{win.electionsymbol.url}}" alt="Atul Prajapati">
+             <h2>{{win.Name}} - {{win.Party}}</h2>
+            </a>
+             {% comment %} <ul>
+                 <li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+                 <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a></li>
+                 <li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i class="fab fa-youtube"></i></a></li>
+             </ul> {% endcomment %}
+         </div>
+         
+         {% comment %} <button type="submit" class='btn btn-primary py-3 px-5 mt-2'>Vote</button> {% endcomment %}
+         {% comment %} <a class="btn btn-primary py-3 px-5 mt-2" href="{% url 'vote' p.id %}">Vote</a> {% endcomment %}
+
+ 
+ </div>&nbsp;&nbsp;&nbsp;&nbsp;
+ {% else %}
+         <h3>Result is Pending</h3>
+         {% endif %}
+   {% comment %} {% endfor %}  {% endcomment %}
+     </div>
+     </div>
+     
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary px-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/moment-timezone.min.js' %}"></script>
+    <script src="{% static 'lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+    <!-- Template Javascript -->
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/plogin.js' %}"></script>
+</body>
+
+</html>
